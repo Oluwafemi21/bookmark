@@ -1,0 +1,18 @@
+:root{
+    --soft-blue:"hsl(231, 69%, 60%)";
+    --soft-red:"hsl(0, 94%, 66%)";
+
+    --grayish-blue:"hsl(229, 8%, 60%)";
+    --dark-blue:"hsl(229, 31%, 21%)";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    
+}
