@@ -6,15 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <title>Frontend Mentor | Bookmark landing page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <figure>
-                <img src="images/logo-bookmark.svg" alt="logo">
-            </figure>
+            <img src="images/logo-bookmark.svg" alt="logo">
+            <img src="images/icon-hamburger.svg" alt="hamburger_menu" id="hamburger" class="hamburger">
         </nav>
     </header>
+    
+    <!-- Hero -->
+    <section class="hero__section" id="hero">
+        <div class="hero__img">
+            <img src="images/illustration-hero.svg" alt="hero-svg">
+            <div class="hero-svg"></div>
+        </div>
+        <div class="hero__content ">
+            <h2>A Simple Bookmark Manager</h2>
+            <p>
+                A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+            </p>
+            <div class="hero__btns">
+                <button class="btn">Get it on Chrome</button>
+                <button class="btn btn-primary">Get it on Firefox</button>
+            </div>
+        </div>
+    </section>
+    
+
     <!-- <footer>
         <p class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

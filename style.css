@@ -1,9 +1,10 @@
-:root{
-    --soft-blue:"hsl(231, 69%, 60%)";
-    --soft-red:"hsl(0, 94%, 66%)";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-    --grayish-blue:"hsl(229, 8%, 60%)";
-    --dark-blue:"hsl(229, 31%, 21%)";
+:root{
+    --soft-blue:hsl(231, 69%, 60%);
+    --soft-red:hsl(0, 94%, 66%);
+    --grayish-blue:hsl(229, 8%, 60%);
+    --dark-blue:hsl(229, 31%, 21%);
 }
 
 *{
@@ -14,5 +15,82 @@
 }
 
 body{
-    
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
 }
+
+header{
+    padding: 10px 40px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.hero__section{
+    display:grid;
+    gap:1rem;
+    padding: 60px 0 0 15px;
+}
+
+.hero__img{
+    position: relative;
+    z-index: 1;
+}
+
+.hero__img img{
+    max-width: 330px;
+    max-height: 350px;
+}
+
+.hero__img .hero-svg{
+    position: absolute;
+    right: 0;
+    top: 55px;
+    border-radius: 250px 0 0 250px;
+    height: 180px;
+    width: 310px;
+    background-color: var(--soft-blue);
+    z-index: -1;
+}
+
+.hero__content h2{
+    text-align: center;
+}
+
+.hero__content p{
+    padding: 20px;
+    text-align: center;
+    color: var(--grayish-blue);
+    font-size: 17px;
+}
+
+.hero__btns{
+    text-align: center;
+}
+
+.btn,.btn.btn-primary:hover{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--soft-blue);
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 9px 10px -10px var(--soft-blue);
+    transition: all 0.3s ease-in-out ;
+}
+
+.btn.btn-primary,.btn:hover{
+    background-color: whitesmoke;
+    color: var(--grayish-blue);
+    box-shadow: 0 9px 10px -10px var(--soft-blue);
+}
+
