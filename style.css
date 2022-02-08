@@ -31,7 +31,7 @@ nav {
 }
 
 .container {
-  padding: 60px 0 0 15px;
+  padding: 50px 0 0 15px;
 }
 
 .hamburger {
@@ -39,8 +39,9 @@ nav {
 }
 
 .hero__section {
-  display: grid;
-  gap: 1em;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3em;
 }
 
 .hero__img {
@@ -71,16 +72,18 @@ nav {
 .content_paragraph {
   padding: 20px 15px;
   text-align: center;
-  color: var(--grayish-blue);
+  color: rgba(0,0,0,0.5);
+  font-weight: 500;
   font-size: 17px;
 }
 
 .hero__btns {
   text-align: center;
+  padding: 15px 0;
 }
 
 .btn {
-  padding: 10px;
+  padding: 12px 10px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -92,8 +95,9 @@ nav {
 
 .btn.btn-primary {
   background-color: whitesmoke;
-  color: var(--grayish-blue);
-  box-shadow: 0 9px 10px -10px var(--grayish-blue);
+  color: var(--dark-blue);
+  font-weight: bold;
+  box-shadow: 0 9px 10px -10px var(--dark-blue);
 }
 
 /* Desktop Style for Hero */
@@ -125,7 +129,7 @@ nav {
   background-color: white;
   color: var(--soft-blue);
   border: 2px solid var(--soft-blue);
-  padding: 8px;
+  padding: 10px 8px;
 }
 
 .btn.btn-primary:hover {
@@ -153,23 +157,75 @@ nav {
 }
 
 .features__content p {
-  padding: 20px;
+  padding:15px;
   text-align: center;
   color: var(--grayish-blue);
   font-size: 16px;
-  font-weight: 400;
 }
 
 .features__tab{
-    margin: 20px 0;
-    border-top: 1px solid var(--grayish-blue);
+  margin: 20px 0;
+  padding: 0 20px;
+  font-weight: 500;
 }
 
 .features__tab p{
-    border-bottom: 1px solid var(--grayish-blue);
+  border-bottom: 1px solid var(--grayish-blue);
+  position: relative;
+}
+
+.features__tab p:first-child{
+  border-top: 1px solid var(--grayish-blue);
+}
+
+.features__tab .active{
+  color: black;
+  font-weight: 500;
+}
+
+.features__tab .active::after{
+  content: "";
+  height: 3px;
+  width: 45%;
+  display:block;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  background-color: var(--soft-red);
+  margin: 0 auto;
 }
 
 
+.tab__changer{
+}
+
+.tab__img{
+  padding: 30px 20px 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.tab__img img{
+  width: 85%;
+  padding: 0 0 0 25px;
+}
+
+.tab__img .tab-svg{
+  height: 180px;
+  width: 70%;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  border-radius: 0 250px 250px 0;
+  background-color: var(--soft-blue);
+  z-index: -1;
+}
+
+.tab__changer-content{
+  padding: 20px;
+  text-align: center;
+}
 
 /* Media Query for 1440px */
 @media only screen and (min-width: 1024px) {
@@ -180,6 +236,6 @@ nav {
     display: none;
   }
   .hero__section {
-      grid-template-columns: repeat(2,1fr);
+    flex-direction: row;
   }
 }
