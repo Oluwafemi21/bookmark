@@ -12,10 +12,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  font-size: 18px;
 }
 
 body {
-  font-size: 18px;
   min-height: 100vh;
 }
 
@@ -168,8 +168,8 @@ p{
 }
 
 .features__content p, .tab__changer-content p, .extension__content p, .faq__content p, .faq-body p{
-  padding:15px;
-  font-size: 16px;
+  padding:15px 0;
+  font-size: 17px;
 }
 
 .features__tab{
@@ -230,7 +230,7 @@ p{
 }
 
 .tab__changer-content{
-  padding: 20px;
+  padding: 20px 15px;
   text-align: center;
 }
 
@@ -270,10 +270,10 @@ p{
 .card-content h3{
   color: var(--dark-blue);
   padding-top: 20px;
+  font-size: 25px;
 }
 
 .card-content p{
-  font-size: 15px;
   color: var(--grayish-blue);
   padding-top: 10px;
 }
@@ -295,6 +295,7 @@ p{
   text-align:center;
   padding: 40px 0;
 }
+
 .faq__content{
   padding: 0 25px;
 }
