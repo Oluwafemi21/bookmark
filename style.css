@@ -304,49 +304,98 @@ h2{
 
 
 .faq-container{
-  padding: 10px 25px;
-  }
-  /* Style the buttons that are used to open and close the faq-page body */
-  .faq-page {
-      /* background-color: #eee; */
-      color: #444;
-      cursor: pointer;
-      padding: 25px 5px;
-      border: none;
-      outline: none;
-      transition: 0.4s;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
-  hr{
-    opacity: 0.7;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active,
-  .faq-page:hover {
-      background-color: #F9F9F9;
-  }
-  /* Style the faq-page panel. Note: hidden by default */
-  .faq-body {
-      padding: 0 18px;
-      background-color: white;
-      display: none;
-      overflow: hidden;
-  }
-  .faq-page:after {
-      content: url(images/icon-arrow.svg);
-      /* Unicode character for "plus" sign (+) */
-      font-size: 13px;
-      color: #777;
-      float: right;
-      margin-left: 5px;
-  }
-  .active:after {
-      content: url(images/icon-close.svg);
-      /* Unicode character for "minus" sign (-) */
-  }
+padding: 50px 25px;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    cursor: pointer;
+    padding: 25px 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr{
+  border: 0.5px solid rgba(0,0,0,0.1);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+.faq-page:after {
+    content: url(images/icon-arrow.svg);
+    /* Unicode character for "plus" sign (+) */
+}
+.active:after {
+    content: url(images/icon-close.svg);
+    /* Unicode character for "minus" sign (-) */
+}
+
+.faq .btn{
+  padding: 12px 20px;
+}
+
+.faq .btn:hover{
+  padding: 10px 18px;
+}
+
+
+.email__section{
+  background-color: var(--soft-blue);
+  color:white;
+  padding: 50px 25px;
+  margin: 40px 0;
+}
+
+.email__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+}
+
+.email__form h6{
+  font-size:13px;
+  letter-spacing: 4px;
+}
+
+.email__form p{
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.email__form input{
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.email__form input::placeholder{
+  color: var(--grayish-blue);
+  font-weight: 500;
+  opacity: 0.4;
+}
+
+.email__form input[type="submit"]{
+  background-color: var(--soft-red);
+  color: white;
+  font-weight: 500;
+}
+
 /* Media Query for 1440px */
 @media only screen and (min-width: 1024px) {
   .nav-menu {
