@@ -78,6 +78,7 @@ p{
 
 .hero__content h1 {
   text-align: center;
+  padding: 0 15px;
   color: var(--dark-blue);
 }
 
@@ -132,6 +133,7 @@ p{
 }
 
 /* Hover effects for Hero section */
+
 .btn:hover {
   background-color: white;
   color: var(--soft-blue);
@@ -155,15 +157,15 @@ p{
 }
 
 /* Features section */
+
+
 .features{
   padding:60px 0 ;
 }
 
-
 .features__content {
   padding: 30px 10px;
 }
-
 
 .features__content p, .tab__changer-content p, .extension__content p, .faq__content p, .faq-body p{
   padding:15px;
@@ -238,6 +240,8 @@ p{
 
 
 /* Extensions */
+
+
 .extension{
   padding: 40px 20px;
 }
@@ -283,7 +287,10 @@ p{
   width: 85%;
 }
 
+
+
 /* FAQs */
+
 .faq{
   text-align:center;
   padding: 40px 0;
@@ -300,7 +307,7 @@ p{
 padding: 60px 25px;
 }
 
-/* Style the buttons that are used to open and close the faq-page body */
+  /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
     color: var(--grayish-blue);
     font-weight: 400;
@@ -318,7 +325,7 @@ hr{
   border: 0.5px solid rgba(0,0,0,0.1);
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active__faq,
 .faq-page:hover {
     background-color: #F9F9F9;
@@ -393,6 +400,9 @@ hr{
   font-weight: 500;
   cursor: pointer;
 }
+
+
+/* Footer */
 
 /* Media Query for 1440px */
 @media only screen and (min-width: 1024px) {
