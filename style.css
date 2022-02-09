@@ -41,6 +41,14 @@ p{
   color: var(--grayish-blue);
 }
 
+a{
+  text-decoration: none;
+}
+
+ul li{
+  list-style-type: none;
+}
+
 .container {
   padding: 50px 0 0 15px;
 }
@@ -111,14 +119,12 @@ p{
 
 /* Desktop Style for Hero */
 .nav-menu {
-  list-style-type: none;
   display: none;
   align-items: center;
   gap: 2em;
 }
 
 .nav-menu a {
-  text-decoration: none;
   text-transform: uppercase;
   color: black;
   font-weight: 500;
@@ -405,6 +411,54 @@ hr{
 
 
 /* Footer */
+footer{
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer__content{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links img{
+  width: 148px;
+}
+.footer-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin:15px 0;
+}
+
+.footer-menu a{
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sm__links{
+  margin: 20px 0;
+}
+
+.sm__links img{
+  padding: 0 10px;
+}
+
+.attribution a{
+  color: wheat;
+}
 
 /* Media Query for 1440px */
 @media only screen and (min-width: 1024px) {
