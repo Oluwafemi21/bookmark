@@ -345,12 +345,11 @@ hr{
     display: none;
 }
 .faq-page:after {
-    content: url(images/icon-arrow.svg);
-    /* Unicode character for "plus" sign (+) */
+  content: url(images/icon-arrow.svg);
 }
+
 .active:after {
-    content: url(images/icon-close.svg);
-    /* Unicode character for "minus" sign (-) */
+  content: url(images/icon-close.svg);
 }
 
 .faq .btn{
