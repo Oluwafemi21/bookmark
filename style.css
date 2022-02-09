@@ -30,6 +30,12 @@ nav {
   justify-content: space-between;
 }
 
+h2{
+  font-size: 25px;
+  color: var(--dark-blue);
+  text-align: center;
+}
+
 .container {
   padding: 50px 0 0 15px;
 }
@@ -67,6 +73,7 @@ nav {
 
 .hero__content h1 {
   text-align: center;
+  color: var(--dark-blue);
 }
 
 .content_paragraph {
@@ -148,15 +155,17 @@ nav {
 }
 
 /* Features section */
+.features{
+  padding:60px 0 ;
+}
+
+
 .features__content {
   padding: 30px 10px;
 }
 
-.features__content h2 {
-  text-align: center;
-}
 
-.features__content p {
+.features__content p, .tab__changer-content p{
   padding:15px;
   text-align: center;
   color: var(--grayish-blue);
@@ -196,9 +205,7 @@ nav {
   margin: 0 auto;
 }
 
-
-.tab__changer{
-}
+/* Features Tab */
 
 .tab__img{
   padding: 30px 20px 30px 0;
@@ -226,6 +233,15 @@ nav {
   padding: 20px;
   text-align: center;
 }
+
+.tab__changer-content .btn{
+  display: none;
+}
+
+
+
+
+
 
 /* Media Query for 1440px */
 @media only screen and (min-width: 1024px) {
