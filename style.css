@@ -165,7 +165,7 @@ h2{
 }
 
 
-.features__content p, .tab__changer-content p, .extension__content p{
+.features__content p, .tab__changer-content p, .extension__content p, .faq__content p{
   padding:15px;
   text-align: center;
   color: var(--grayish-blue);
@@ -284,6 +284,16 @@ h2{
 .card .btn{
   margin: 20px 20px 0 20px;
   width: 85%;
+}
+
+/* FAQs */
+
+.faq__content{
+  padding: 0 25px;
+}
+
+.faq__content p{
+  padding: 10px;
 }
 
 /* Media Query for 1440px */
