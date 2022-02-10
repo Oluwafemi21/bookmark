@@ -53,7 +53,7 @@ ul li{
   padding: 50px 0 0 15px;
 }
 
-.hamburger {
+.menu{
   cursor: pointer;
 }
 
@@ -349,7 +349,7 @@ hr{
 }
 
 .active:after {
-  content: url(images/icon-close.svg);
+  content: url(images/icon-arrow-alt.svg);
 }
 
 .faq .btn{
@@ -457,6 +457,40 @@ footer{
 
 .attribution a{
   color: wheat;
+}
+
+
+
+/* Hamburger Menu */
+.hamburger{
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 30px 40px;
+}
+
+.hamburger__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hamburger-menu li{
+  padding: 10px 0;
+}
+
+.hamburger-menu a{
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 /* Media Query for 1440px */
