@@ -467,6 +467,8 @@ footer{
   color: white;
   padding: 30px 40px;
   letter-spacing: 2px;
+
+  transition:all ease-in-out 0.4s;
 }
 
 .hamburger__header{
@@ -516,6 +518,10 @@ footer{
 
 .close{
   cursor:pointer;
+}
+
+.hidden{
+  display:none;
 }
 
 /* Media Query for 1440px */
