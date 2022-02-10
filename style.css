@@ -99,6 +99,9 @@ ul li{
 .hero__btns {
   text-align: center;
   padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .btn {
@@ -313,6 +316,7 @@ ul li{
 
 .faq-container{
 padding: 60px 25px;
+text-align: left;
 }
 
   /* Style the buttons that are used to open and close the faq-page body */
@@ -339,11 +343,15 @@ hr{
     background-color: #F9F9F9;
 }
 /* Style the faq-page panel. Note: hidden by default */
-.faq-body {
-    padding: 0 18px;
+.faq-body{
     background-color: white;
     display: none;
 }
+
+.faq-body p{
+  text-align: left;
+}
+
 .faq-page:after {
   content: url(images/icon-arrow.svg);
 }
@@ -433,6 +441,7 @@ footer{
 .footer-links img{
   width: 148px;
 }
+
 .footer-menu{
   display: flex;
   flex-direction: column;
@@ -474,7 +483,7 @@ footer{
   top:0;
   left:0;
   width:100%;
-  height:100%;
+  min-height: 100vh;
   z-index:2;
   opacity:0.95;
 
