@@ -417,11 +417,9 @@ hr {
   opacity: 0.4;
 }
 
-.email__area input[type="submit"] {
-  background-color: var(--soft-red);
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
+.email__area input[type="submit"]:hover{
+  padding: 10px;
+  font-size: 16px;
 }
 
 /* Footer */
@@ -709,6 +707,7 @@ footer {
   .faq {
     max-width: 550px;
     margin: 0 auto;
+    padding: 70px 0;
   }
 
   .faq__content p {
@@ -749,6 +748,11 @@ footer {
     padding: 12px;
   }
 
+  /* .email__area input[type="submit"]:hover{
+    background-color: white;
+    border: 2px solid var(--soft-red);
+  } */
+
   .footer__content,
   .footer-links,
   .footer-menu {
@@ -769,6 +773,10 @@ footer {
     gap: 35px;
   }
 
+  .footer-menu a:hover{
+    color: var(--soft-red);
+  }
+
   .attribution {
     text-align: center;
   }
@@ -779,7 +787,37 @@ footer {
     transition: all ease-in 0.3s;
   }
 
+  .extension{
+    padding: 70px 0;
+  }
+
+  .extension__content {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .extension__content p{
+    text-align: center;
+  }
   .extension__cards {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .extension__cards .card:nth-child(2){
+    transform: translateY(50px);
+  }
+  .extension__cards .card:nth-child(3){
+    transform: translateY(100px);
+  }
+  .card{
+    width:90%;
+  }
+  .extension__cards .card:nth-child(2):hover,
+  .extension__cards .card:nth-child(3):hover{
+    transform: translateY(0);
+  }
+  .card-content p {
+    text-align: center;
   }
 }
