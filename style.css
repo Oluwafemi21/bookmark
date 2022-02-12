@@ -432,16 +432,20 @@ hr {
 
 .email__area input {
   border: none;
+  padding: 10px 15px;
   width: 90%;
-  padding: 15px;
-  border-radius: 6px;
+  height: 45px;
+  text-transform: none;
   outline: none;
+  border-radius: 6px;
 }
 
 .email__area input[type="submit"]{
   width: 100%;
-  padding:13px 0;
 }
+
+
+
 
 .email__area input::placeholder {
   color: var(--grayish-blue);
@@ -770,7 +774,6 @@ footer {
 
   .email_input{
     text-align: left;
-    
     width: 70%;
     position: relative;
   }
@@ -795,14 +798,14 @@ footer {
 
   .email__area input[type="email"] {
     width: 92%;
-    border-radius: none;
+    border-radius: 6px;
     padding: 12px;
     background-color: white;
   }
 
-  .email__area input[type="submit"] {
+  .email__area input[type="submit"]{
     width: 30%;
-    padding: 12px;
+    padding: 13px 0;
     text-transform: none;
   }
 
