@@ -403,12 +403,44 @@ hr {
   width: 100%;
 }
 
+.validate{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.validate img{
+  height: 20px;
+}
+
+.email_input{
+  width:100%;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.email_input span{
+  font-style: italic;
+  font-size: 15px;
+  padding: 10px 10px;
+}
+
+.validate img, .email_input span{
+  display: none;
+}
+
 .email__area input {
   border: none;
-  width: 100%;
+  width: 90%;
   padding: 15px;
   border-radius: 6px;
   outline: none;
+}
+
+.email__area input[type="submit"]{
+  width: 100%;
+  padding:13px 0;
 }
 
 .email__area input::placeholder {
@@ -417,10 +449,6 @@ hr {
   opacity: 0.4;
 }
 
-.email__area input[type="submit"]:hover{
-  padding: 10px;
-  font-size: 16px;
-}
 
 /* Footer */
 footer {
@@ -555,6 +583,8 @@ footer {
   justify-content: center;
   gap: 35px;
 }
+
+
 
 /* Media Query for 1440px */
 @media only screen and (min-width: 1024px) {
@@ -738,20 +768,43 @@ footer {
     flex-direction: row;
   }
 
-  .email__area input[type="email"] {
+  .email_input{
+    text-align: left;
+    
     width: 70%;
+    position: relative;
+  }
+
+  .validate{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .validate img{
+    height: 20px;
+  }
+
+  .email_input span{
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+
+
+  .email__area input[type="email"] {
+    width: 92%;
+    border-radius: none;
     padding: 12px;
+    background-color: white;
   }
 
   .email__area input[type="submit"] {
     width: 30%;
     padding: 12px;
+    text-transform: none;
   }
-
-  /* .email__area input[type="submit"]:hover{
-    background-color: white;
-    border: 2px solid var(--soft-red);
-  } */
 
   .footer__content,
   .footer-links,
@@ -812,10 +865,6 @@ footer {
   }
   .card{
     width:90%;
-  }
-  .extension__cards .card:nth-child(2):hover,
-  .extension__cards .card:nth-child(3):hover{
-    transform: translateY(0);
   }
   .card-content p {
     text-align: center;

@@ -1,8 +1,14 @@
 let faq = document.getElementsByClassName("faq-page");
 const menu = document.getElementById("menu");
-const close = document.getElementById("close");
+const closeBtn = document.getElementById("close");
+const email = document.getElementById("email");
 const hamburger = document.getElementById("hamburger");
-
+const emailInput = document.getElementById("email_input");
+const validator = document.getElementById("validator");
+const error = document.getElementById("error");
+const errorIcon = document.getElementById("error-icon");
+const errorMessage = document.getElementById("error-message");
+const emailArea = document.getElementById('email-area');
 
 let i;
 for (i = 0; i < faq.length; i++) {
@@ -25,7 +31,30 @@ menu.addEventListener('click',()=>{
     console.log('menu button clicked');
 })
 
-close.addEventListener('click',()=>{
+closeBtn.addEventListener('click',()=>{
     hamburger.classList.add('hidden');
     console.log('close button clicked');
 })
+
+
+validator.addEventListener('click',()=>{
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(email.value.match(mailformat)){
+        console.log('success');
+    } else{
+        emailArea.style.alignItems = "start";
+        emailInput.style.backgroundColor = "#fa5757";
+        errorMessage.style.display = "block";
+        errorIcon.style.display = "block";
+
+        console.log(email.value);
+        console.log('error');
+    }
+});
+
+
+
+// Email Validation
+// function emailValidator(email){
+    
+// }

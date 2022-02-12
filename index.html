@@ -199,15 +199,21 @@
     </main>
 
     <!-- Email Us -->
-    <section class="email__section" id="email">
-        <form class="email__form">
+    <section class="email__section">
+        <div class="email__form">
             <h6>35,000+ ALREADY JOINED</h6>
             <p>Stay up-to-date with what we're doing</p>
-            <div class="email__area">
-                <input type="email" name="Email" id="email" placeholder="Enter your email address">
-                <input type="submit" value="Contact Us" class="btn btn-secondary">
-            </div>
-        </form>
+            <form class="email__area" id="email-area">
+                <div class="email_input" id="email_input">
+                    <div class="validate"  id="error">
+                        <input type="email" name="Email" id="email" placeholder="Enter your email address" required>
+                        <img src="images/icon-error.svg" alt="icon-error" id="error-icon">
+                    </div>
+                    <span id="error-message">Whoops, make sure it's an email</span>
+                </div>   
+                <input type="submit" value="Contact Us" class="btn btn-secondary" id="validator">
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
