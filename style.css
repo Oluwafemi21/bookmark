@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  padding: 15px 40px;
+  padding: 30px 40px;
 }
 
 nav {
@@ -133,8 +133,7 @@ ul li {
 
 .nav-menu a {
   text-transform: uppercase;
-  color: black;
-  font-weight: 500;
+  color: var(--grayish-blue);
   font-size: 16px;
 }
 
@@ -516,7 +515,7 @@ footer {
 .hamburger {
   background-color: var(--dark-blue);
   color: white;
-  padding: 15px 40px 30px;
+  padding: 30px 40px;
   letter-spacing: 2px;
 
   transition: all ease-in-out 0.4s;
@@ -613,7 +612,7 @@ footer {
   }
 
   header {
-    padding: 20px 40px;
+    padding: 30px 40px;
   }
 
   .nav-menu {
@@ -637,7 +636,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 100px 0;
   }
 
   .hero__content {
@@ -679,6 +678,9 @@ footer {
   }
 
   /* Features Tab */
+  .features{
+    padding:80px 0;
+  }
   .features__content > p {
     max-width: 500px;
     margin: 0 auto;
@@ -765,7 +767,7 @@ footer {
   .faq {
     max-width: 550px;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 90px 0;
   }
 
   .faq__content p {
