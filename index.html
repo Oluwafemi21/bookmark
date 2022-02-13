@@ -16,7 +16,7 @@
             <img src="images/logo-bookmark.svg" alt="logo">
             <img src="images/icon-hamburger.svg" alt="hamburger_menu" id="menu" class="menu">
             <ul class="nav-menu">
-                <li><a href="/">features</a></li>
+                <li><a href="#features">features</a></li>
                 <li><a href="/">pricing</a></li>
                 <li><a href="/">contact</a></li>
                 <button class="btn btn-secondary">login</button>
@@ -33,7 +33,7 @@
             </div>
             <ul class="hamburger-menu">
                 <hr>
-                <li><a href="/">features</a></li>
+                <li><a href="#features">features</a></li>
                 <hr>
                 <li><a href="/">pricing</a></li>
                 <hr>
@@ -82,7 +82,8 @@
             </div>
         </div>
 
-        <div class="tab__changer">
+       
+        <div class="tab__changer tab__active">
             <div class="tab__img">
                 <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">     
                 <div class="tab-svg"></div>
@@ -97,8 +98,43 @@
                 
                 <button class="btn">More Info</button>
             </div>
+        </div>
+
+        <div class="tab__changer">
+            <div class="tab__img">
+                <img src="images/illustration-features-tab-2.svg" alt="illustration-features-tab-2">     
+                <div class="tab-svg"></div>
+            </div>     
+
+            <div class="tab__changer-content">
+                <h2>Intelligent search</h2>
+                <p>
+                    Our powerful search feature will help you find saved sites in no time at all. 
+                    No need to trawl through all of your bookmarks.
+                </p>
+                
+                <button class="btn">More Info</button>
+            </div>
+        </div>
+
+        <div class="tab__changer">
+            <div class="tab__img">
+                <img src="images/illustration-features-tab-3.svg" alt="illustration-features-tab-3">     
+                <div class="tab-svg"></div>
+            </div>     
+
+            <div class="tab__changer-content">
+                <h2>Share your bookmarks</h2>
+                <p>
+                    Easily share your bookmarks and collections with others. Create a shareable 
+                    link that you can send at the click of a button.                  
+                </p>
+                
+                <button class="btn">More Info</button>
+            </div>
 
         </div>
+       
     </section>
     
     <!-- Extension Section -->
@@ -206,7 +242,7 @@
             <form class="email__area" id="email-area">
                 <div class="email_input" id="email_input">
                     <div class="validate"  id="error">
-                        <input type="email" name="Email" id="email" placeholder="Enter your email address" required>
+                        <input type="text" name="Email" id="email" placeholder="Enter your email address" required>
                         <img src="images/icon-error.svg" alt="icon-error" id="error-icon">
                     </div>
                     <span id="error-message">Whoops, make sure it's an email</span>

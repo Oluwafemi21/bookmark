@@ -7,6 +7,10 @@
   --dark-blue: hsl(229, 31%, 21%);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -181,7 +185,7 @@ ul li {
 .extension__content p,
 .faq__content p,
 .faq-body p {
-  padding: 15px 0;
+  padding: 30px 0;
   font-size: 17px;
 }
 
@@ -194,6 +198,7 @@ ul li {
 .features__tab p {
   border-bottom: 1px solid var(--grayish-blue);
   position: relative;
+  cursor: pointer;
 }
 
 .features__tab p:first-child {
@@ -219,7 +224,12 @@ ul li {
 }
 
 /* Features Tab */
-
+.tab__changer {
+  display: none;
+}
+.tab__changer.tab__active{
+  display: block;
+}
 .tab__img {
   padding: 30px 20px 30px 0;
   position: relative;
@@ -227,16 +237,17 @@ ul li {
 }
 
 .tab__img img {
-  width: 85%;
+  width: 100%;
+  height:100%;
   padding: 0 0 0 25px;
 }
 
 .tab__img .tab-svg {
-  height: 180px;
-  width: 70%;
+  height: 80%;
+  width: 75%;
   position: absolute;
   left: 0;
-  top: 60px;
+  top: 70px;
   border-radius: 0 250px 250px 0;
   background-color: var(--soft-blue);
   z-index: -1;
@@ -355,7 +366,7 @@ hr {
   content: url(images/icon-arrow.svg);
 }
 
-.active:after {
+.activefaq:after {
   content: url(images/icon-arrow-alt.svg);
 }
 
@@ -444,15 +455,11 @@ hr {
   width: 100%;
 }
 
-
-
-
 .email__area input::placeholder {
   color: var(--grayish-blue);
   font-weight: 500;
   opacity: 0.4;
 }
-
 
 /* Footer */
 footer {
@@ -696,7 +703,7 @@ footer {
 
   .features__tab {
     display: flex;
-    width: 50%;
+    width: 54%;
     padding: 0;
     margin: 20px auto;
     border-bottom: 1px solid var(--grayish-blue);
@@ -715,12 +722,17 @@ footer {
     top: 90px;
   }
 
+  
   .tab__changer {
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    display: none;
   }
 
+  .tab__changer.tab__active{
+    display: flex;
+  }
   .tab__changer-content {
     width: 50%;
     padding-right: 40px;
@@ -732,10 +744,22 @@ footer {
 
   .tab__changer-content .btn {
     display: block;
+    font-size: 15px;
+    padding: 12px 23px;
+  }
+
+  .tab__changer-content .btn:hover{
+    padding: 10px 21px;
   }
 
   .tab__img {
     width: 50%;
+  }
+
+  .tab__img img{
+    height: 300px;
+    width: 83%;
+    padding-left: 40px;
   }
 
   .faq {
@@ -796,7 +820,7 @@ footer {
   }
 
 
-  .email__area input[type="email"] {
+  .email__area input[type="text"] {
     width: 92%;
     border-radius: 6px;
     padding: 12px;

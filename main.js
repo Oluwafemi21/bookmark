@@ -9,13 +9,15 @@ const error = document.getElementById("error");
 const errorIcon = document.getElementById("error-icon");
 const errorMessage = document.getElementById("error-message");
 const emailArea = document.getElementById('email-area');
+const tabs = document.querySelectorAll(".features__tab p");
+const contents = document.querySelectorAll(".tab__changer")
 
 let i;
 for (i = 0; i < faq.length; i++) {
     faq[i].addEventListener("click", function () {
         /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
-        this.classList.toggle("active");
+        this.classList.toggle("activefaq");
         /* Toggle between hiding and showing the active panel */
         var body = this.nextElementSibling;
         if (body.style.display === "block") {
@@ -28,16 +30,15 @@ for (i = 0; i < faq.length; i++) {
 
 menu.addEventListener('click',()=>{
     hamburger.classList.remove('hidden');
-    console.log('menu button clicked');
 })
 
 closeBtn.addEventListener('click',()=>{
     hamburger.classList.add('hidden');
-    console.log('close button clicked');
 })
 
 
-validator.addEventListener('click',()=>{
+validator.addEventListener('click',(e)=>{
+    e.preventDefault();
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(email.value.match(mailformat)){
         console.log('success');
@@ -52,9 +53,14 @@ validator.addEventListener('click',()=>{
     }
 });
 
+tabs.forEach((tab, index)=>{
+    tab.addEventListener('click',()=> {
+        // To remove active tab from previous tab
+        tabs.forEach(tab => tab.classList.remove('active'));
+        tab.classList.add('active');
 
-
-// Email Validation
-// function emailValidator(email){
-    
-// }
+        // To show content according to tab selected
+        contents.forEach(content => content.classList.remove('tab__active'));
+        contents[index].classList.add("tab__active");
+    })
+})
